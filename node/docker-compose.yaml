@@ -6,6 +6,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./node:/usr/src/node
+    command: sh -c "cd node && npm init"
     ports:
       - "3000:3000"
     tty: true
