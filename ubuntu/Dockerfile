@@ -2,8 +2,10 @@ FROM ubuntu:22.04
 
 ENV HTTP_PROXY $HTTP_PROXY
 ENV HTTPS_PROXY $HTTPS_PROXY
+ENV FTP_PROXY $FTP_PROXY
 ENV http_proxy $http_proxy
 ENV https_proxy $https_proxy
+ENV ftp_proxy $ftp_proxy
 
 RUN apt update && apt upgrade -y
 RUN apt install -y language-pack-ja-base language-pack-ja locales
