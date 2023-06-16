@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:8.0
     volumes:
-      - ./deta:/var/lib/mysql
+      - ./data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
     ports:
